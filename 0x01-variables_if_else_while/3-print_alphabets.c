@@ -6,15 +6,13 @@
  */
 int main(void)
 {
-	char ap = 'a';
+	char ap = 'a', AP = 'A';
 
 	while (ap <= 'z')
 	{
 		putchar(ap);
 		ap++;
 	}
-
-	char AP = 'A';
 
 	while (AP <= 'Z')
 	{
