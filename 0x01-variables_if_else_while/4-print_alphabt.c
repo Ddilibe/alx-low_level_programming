@@ -10,8 +10,9 @@ int main(void)
 
 	while (ap <= 'z')
 	{
-		if ((ap == 'e')||(ap == 'q'))
+		if ((ap == 'e') || (ap == 'q'))
 		{
+			ap++;
 			continue;
 		}
 		else 
