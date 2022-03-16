@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * main - Prints the 9 times 0table, starting from 0
+ * add - Adds two integer and retuns
+ * the result
  * 
  * @a: number one.
  * @b: number two.
  *
- * Return: (0) Always
+ * Return: Add of number one and number two.
  */ 
 
 
