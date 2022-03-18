@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Print FixxBuzz for each multiple of 3 and 5
+ * main - Print fizz for multiples of 3
  * Return: 0
  */
 
