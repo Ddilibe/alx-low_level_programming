@@ -2,10 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Print fizz for multiples of 3
- * print buzz for multiples of 5
- * then fizzbuzz for multiples of 5 and 3
- *
+ * main - Print FixxBuzz for each multiple of 3 and 5
  * Return: 0
  */
 
@@ -32,5 +29,6 @@ int main(void)
 			printf("%d ", i);
 		}
 	}
+	printf("\n");
 	return (0);
 }
