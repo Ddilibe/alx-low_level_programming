@@ -8,8 +8,6 @@
 
 int _strlen(char *s)
 {
-	char &mon[] = *s;
 
-	return (strlen(&mon));
+	return (strlen(s));
 }
-
