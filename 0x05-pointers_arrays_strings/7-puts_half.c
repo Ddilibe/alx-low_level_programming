@@ -14,9 +14,19 @@ void puts_half(char *str)
 
 	t = strlen(str);
 	y = t / 2;
-	for (u = (y); u < t; u++)
+	if (t % 2 == 0)
 	{
-		printf("%c", str[u]);
+		for (u = (y); u < t; u++)
+		{
+			printf("%c", str[u]);
+		}
+	}
+	else
+	{
+		for (u = (y + 1); u < t; u++)
+		{
+			printf("%c", str[u]);
+		}
 	}
 	printf("\n");
 }
