@@ -29,16 +29,6 @@ void print_array(int *a, int n)
 	}
 	else
 	{
-		for (h = 0; h >= n; h--)
-		{
-			if ( h != n)
-			{
-				printf("%d, ", a[h]);
-			}
-			else
-			{
-				printf("%d\n", a[h]);
-			}
-		}
+		printf("\n");
 	}
 }
