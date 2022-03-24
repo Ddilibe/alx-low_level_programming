@@ -36,5 +36,5 @@ char swap(char *dest, char *src){
 		i++;
 	} while (src[a] != '\0');
 
-	return (dest);
+	return (*dest);
 }
