@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * reverse_array - reverses the content od an array
- * of intergers
+ * reverse_array - reverses the content 
+ * of an array of intergers
  * @a: array
- * @n: number of the elements in the array
+ * @n: number of the elements 
+ * in the array
  * Return: no return
  */
 
