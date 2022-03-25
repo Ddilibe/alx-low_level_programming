@@ -24,7 +24,8 @@ char *_strcat(char *dest, char *src)
 
 	for (k = 0; k <= i; k++)
 	{
-		if (k == i){
+		if (k == i)
+		{
 			*(dest + mon) = '\0';
 			break;
 		}
