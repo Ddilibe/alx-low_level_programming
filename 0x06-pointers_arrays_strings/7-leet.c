@@ -61,4 +61,4 @@ char *leet(char *r)
 		}
 	}
 	return (r);
-}	
+}
