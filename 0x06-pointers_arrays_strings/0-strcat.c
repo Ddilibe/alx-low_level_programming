@@ -33,7 +33,7 @@ char *_strcat(char *dest, char *src)
 			*(dest + mon) = *(src + k);
 			mon++;
 		}
-	}		
+	}
 
 	return (dest);
 }	
