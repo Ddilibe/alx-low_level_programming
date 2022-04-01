@@ -4,7 +4,8 @@
 
 /**
  * main - a program tha multiplies two numbers
- *
+ * @argc: number of command lines
+ * @argv: array that conatins the program command line arguments.
  * Return: Always 0.
  */
 
