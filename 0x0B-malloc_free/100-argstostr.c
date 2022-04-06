@@ -30,7 +30,7 @@ char *argstostr(int ac, char **av)
 
 	if (aout == NULL)
 	{
-#include "holberton.h"
+#include "main.h"
 #include <stdlib.h>
 
 /**
