@@ -13,20 +13,34 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **mon;
-	int f, g;
+	int **gridout;
+	int i, j;
 
-	mon = malloc(width  * sizeof(int *));
-	for (f = 0; f < width; f++)
+	if (width < 1 || height < 1)
+		return (NULL);
+
+	gridout = malloc(height * sizeof(int *));
+	if (gridout == NULL)
 	{
-		mon[f] = malloc(height * sizeof(int));
+		free(gridout);
+		return (NULL);
 	}
-	for (f = 0; f < width; f++)
+
+	for (i = 0; i < height; i++)
 	{
-		for (g = 0; g < height; g++)
+		gridout[i] = malloc(width * sizeof(int));
+		if (gridout[i] == NULL)
 		{
-			mon[f][g] = 0;	
+			for (i--; i >= 0; i--)
+				free(gridout[i]);
+			free(gridout);
+			return (NULL);
 		}
 	}
-	return (mon);
+
+	for (i = 0; i < height; i++)
+		for (j = 0; j < width; j++)
+			gridout[i][j] = 0;
+
+	return (gridout);
 }
