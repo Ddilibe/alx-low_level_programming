@@ -1,5 +1,5 @@
-#ifndef
-#define
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 	int *array_range(int min, int max);
 	void *_calloc(unsigned int nmemb, unsigned int size);
