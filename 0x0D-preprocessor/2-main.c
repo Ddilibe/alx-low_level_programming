@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Function to print the name 
+ * main - Function to print the name
  * of the file it was complied from
  *
  * Return: Always 0.
