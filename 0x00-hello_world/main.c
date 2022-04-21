@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("I am Living Life")
+	printf("I am Living Life");
 	return (0);
 }
