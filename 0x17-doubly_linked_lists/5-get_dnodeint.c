@@ -14,7 +14,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	unsigned int e = 0;
 
 	if (head == NULL)
-		return NULL;
+		return (NULL);
 	else
 	{
 		current = head;
