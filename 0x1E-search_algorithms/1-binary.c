@@ -37,6 +37,7 @@ int binary_search(int *array, size_t size, int value)
 /**
  * print_binary - Printing a sorted array of integers using the binary search
  * alorigthm
+ * @array: The array to print from
  * @a: Beginning of the array
  * @b: End of the array to be printed
  * Return: No return
