@@ -48,7 +48,7 @@ void print_binary(int *array, size_t a, size_t b)
 	{
 		printf(" %d", array[a]);
 		a++;
-		if ((a < b))
+		if (a < b)
 			printf(",");
 	}
 	printf("\n");
