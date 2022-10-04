@@ -22,7 +22,7 @@ int binary_search(int *array, size_t size, int value)
 
 	while (L <= R)
 	{
-		print_binary(array, L, R+1);
+		print_binary(array, L, R + 1);
 		m = ceil((L + R) / 2);
 		if (array[m] < value)
 			L = m + 1;
@@ -44,9 +44,9 @@ int binary_search(int *array, size_t size, int value)
 void print_binary(int *array, size_t a, size_t b)
 {
 	printf("Searching in array:");
-	for(; a < b; )
+	for (; a < b; )
 	{
-		printf(" %d",array[a]);
+		printf(" %d", array[a]);
 		a++;
 		if ((a < b))
 			printf(",");
