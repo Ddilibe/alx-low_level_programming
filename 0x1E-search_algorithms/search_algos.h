@@ -34,6 +34,7 @@ listint_t *create_list(int *array, size_t size);
 void print_list(const listint_t *list);
 void free_list(listint_t *list);
 listint_t *jump_list(listint_t *list, size_t size, int value);
+listint_t *conclusion_list(listint_t *list, size_t size, size_t s, int v);
 
 /**
  * Given Prototype

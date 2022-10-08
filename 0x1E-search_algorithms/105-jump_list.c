@@ -43,6 +43,21 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	}
 	printf("Value found between indexes [%ld] and [%ld]\n",
 			length, distance >= size ? size - 1 : distance);
+
+	return (conclusion_list( current, size, distance, value));
+}
+
+/**
+ * conclusion_list - Function that concludes the jump function
+ * @current: Pointer to a linked list
+ * @size: First size of the linked list
+ * @distance: Second size of the linked list
+ * @value: Value to compare
+ * Return: NUll or pointer to another header
+ */
+listint_t *conclusion_list(listint_t *current, size_t size,
+		size_t distance, int value)
+{
 	
 	while (current->index < (distance >= size ? size : distance))
 	{
@@ -51,7 +66,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		if (current->next)
 		{
 			if (current->n == value)
-				return current;
+				return (current);
 			current = current->next;
 			continue;
 		}
