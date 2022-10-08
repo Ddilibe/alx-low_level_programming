@@ -44,7 +44,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	printf("Value found between indexes [%ld] and [%ld]\n",
 			length, distance >= size ? size - 1 : distance);
 
-	return (conclusion_list( current, size, distance, value));
+	return (conclusion_list(current, size, distance, value));
 }
 
 /**
@@ -58,7 +58,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 listint_t *conclusion_list(listint_t *current, size_t size,
 		size_t distance, int value)
 {
-	
+
 	while (current->index < (distance >= size ? size : distance))
 	{
 		printf("Value checked at index [%ld] = [%d]\n",
