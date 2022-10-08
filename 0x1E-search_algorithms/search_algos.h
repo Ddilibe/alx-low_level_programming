@@ -16,6 +16,8 @@ int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 int jump_search(int *array, size_t size, int value);
 int interpolation_search(int *array, size_t size, int value);
+int exponential_search(int *array, size_t size, int value);
+int binary_search_exponential(int *array, size_t size, size_t limit, int value);
 
 /**
  * Self Created Prototype
