@@ -10,27 +10,27 @@
  */
 int exponential_search(int *array, size_t size, int value)
 {
-	size_t bound = 1, jame = 1;
+	size_t bon = 1, jame = 1;
 
 	if (!array)
-		return -1;
+		return (-1);
 
-	while (bound < size && array[bound] < value)
+	while (bon < size && array[bon] < value)
 	{
-		printf("Value checked array[%ld] = [%d]\n", bound, array[bound]);
-		jame = bound;
-		bound = bound * 2;
+		printf("Value checked array[%ld] = [%d]\n", bon, array[bon]);
+		jame = bon;
+		bon = bon * 2;
 	}
 
 	printf("Value found between indexes [%ld] and [%ld]\n",
-			jame, bound < size ? bound : size - 1);
+			jame, bon < size ? bon : size - 1);
 
-	return (binary_search_exponential(array, fmin(bound + 1, size),
-				bound / 2, value));
+	return (binary_search_exponential(array, (bon + 1 > size ? size : bon + 1),
+				bon / 2, value));
 }
 
 /**
- * binary_search_exponential - Function that searches for a value in a 
+ * binary_search_exponential - Function that searches for a value in a
  * sorted array of integers using the binary search algorithm
  * @array: Pointer to the first element of an array to search in
  * @size: Numnber of elements in an array
